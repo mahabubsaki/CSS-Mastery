@@ -1,0 +1,152 @@
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.box-container{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #4f4d4d;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    transform: rotate(45deg);
+    overflow: hidden;
+    position: relative;
+}
+.box{
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.initial-box-color{
+    background-color: #f1f1f1;
+}
+.initital-line-circle-color{
+    background-color: gray;
+}
+.mouse-enter-box-color{
+    background-color: white;
+}
+.mouse-enter-line-circle-color{
+    background-color: green;
+}
+
+.inner-ring{
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 25%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+    inset: 0;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.line{
+    position: absolute;
+    transition: all 0.3s ease-out;
+    width: 1px;
+    
+}
+
+.line-one-initial{
+    top:-20%;
+    height: 25px;
+}
+.line-one-mouse{
+    top:-36%;
+    height: 45px;
+}
+.line-two-initial{
+    right: -10%;
+    transform: rotate(90deg);
+    height: 25px;
+}
+.line-two-mouse{
+    right: -18%;
+    transform: rotate(90deg);
+    height: 45px;
+}
+.line-three-initial{
+    bottom: -20%;
+    height: 25px;
+}
+.line-three-mouse{
+    bottom: -36%;
+    height: 45px;
+}
+.line-four-initial{
+    left: -10%;
+    transform: rotate(90deg);
+    height: 25px;
+}
+.line-four-mouse{
+    left: -18%;
+    transform: rotate(90deg);
+    height: 45px;
+}
+.line-circle{
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+ 
+}
+.line-circle-one{
+    top: -1px;
+    left: -5.5px;
+}
+.line-circle-two{
+    top: -1px;
+    left: -5.7px;
+}
+.line-circle-three{
+    bottom: -1px;
+    left: -5.5px;
+}
+.line-circle-four{
+    bottom: -1px;
+    left: -5.7px;
+}
+.content-container{
+    position: relative;
+    transform: rotate(-45deg);
+}
+.content-container p{
+    position: absolute;
+font-size: 20px;
+width: 40%;
+    text-align: center;
+}
+.content-one {
+ 
+     top: 40px;
+    left: -11px; 
+
+    
+}
+
+.content-two {
+    top: 48px;
+    left: -19px;
+}
+
+
+.content-three{
+    top: 40px;
+    left: -11px;
+}
+.content-four {
+    top: 48px;
+    left: -8px;
+}
